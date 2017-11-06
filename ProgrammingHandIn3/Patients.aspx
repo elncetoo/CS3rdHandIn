@@ -42,7 +42,7 @@
                     <div class="container">
                      <div class="row">
                         <div class="col-md-6">
-                            <div style="display:flex; justify-content:center; padding:3%;">
+                            <div style="display:flex; justify-content:center; padding:1%;">
                                <asp:GridView runat="server" ID="PatientsGridView" Width="1109px" OnSelectedIndexChanged="PatientsGridView_SelectedIndexChanged">
                                     <Columns>
                                         <asp:ButtonField CommandName="Select" Text="Select" />

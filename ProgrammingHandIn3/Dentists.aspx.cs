@@ -82,7 +82,7 @@ namespace ProgrammingHandIn3
             ButtonUpdateSelectedDentist.Enabled = true;
 
             UpdateDentistGridView();
-            MessageNewFormDent.Text = "Dentist updated to dentists list";
+            MessageNewFormDent.Text = "";
 
         }
 
@@ -168,6 +168,8 @@ namespace ProgrammingHandIn3
                     Application.UnLock();
 
                     UpdateDentistGridView();
+                    MessageNewFormDent.Text = "Dentist updated to dentists list";
+
                 }
             }
 

@@ -17,7 +17,7 @@ namespace ProgrammingHandIn3
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack) //bjarke
+            if (!Page.IsPostBack) 
             {
                 Application["SelectedPatient"] = null;
                 MessagePatientForm.Text = (string)Application["SelectedPatient"];
@@ -138,8 +138,7 @@ namespace ProgrammingHandIn3
             MessagePatientForm.Text = "Selected patient: " + PatientsGridView.SelectedRow.Cells[2].Text;
 
             UpdatePatientsGridView();
-            MessageNewFormPat.Text = "Patient updated to dentists list";
-
+            MessageNewFormPat.Text = "";
         }
 
         protected void ButtonUpdateSelectedPatient_Click(object sender, EventArgs e)
@@ -167,7 +166,7 @@ namespace ProgrammingHandIn3
                     Application.UnLock();
 
                     UpdatePatientsGridView();
-                    MessagePatientForm.Text = "Patient updated.";
+                    MessagePatientForm.Text = "Patient updated to Patients list";
                 }
             }
         }

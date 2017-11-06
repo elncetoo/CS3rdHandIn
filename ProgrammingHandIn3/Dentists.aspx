@@ -60,39 +60,39 @@
                     <div style="display:flex; justify-content:center;">
                         <asp:Label ID="LabelHeaderWrap" runat="server" CssClass="headertext" EnableTheming="false" Text="The Østerbro`s Dental Clinic – Dr. Jensen A/S"></asp:Label>
                     </div>
-                    <div style="padding:3% 15%;" >
+                    <div style="padding:1% 15%;" >
                         <asp:Label ID="LabelCreateDentist" runat="server" Text="Enter Dentist`s Name" CssClass="label"></asp:Label>
                         <br />
-                        <asp:TextBox ID="TextBoxCRDName" runat="server" Width="352px" ></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCRDName" runat="server" Width="271px" ></asp:TextBox>
                         <br />
                         <br />
 
                         <asp:Label ID="LabelCRDAge" runat="server" Text="Enter Dentist`s Age" CssClass="label"></asp:Label>
                         <br />
-                        <asp:TextBox ID="TextBoxCRDAge" runat="server" Width="352px"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCRDAge" runat="server" Width="271px"></asp:TextBox>
                         <br />
                         <br />
 
                         <asp:Label ID="LabelCRDPass" runat="server" Text="Enter Dentist`s Password" CssClass="label"></asp:Label>
                         <br />
-                        <asp:TextBox ID="TextBoxCRDPass" runat="server" Width="352px"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCRDPass" runat="server" Width="271px"></asp:TextBox>
                         <br />
                         <br />
 
                         <asp:Label ID="LabelCRDEmail" runat="server" Text="Enter Dentist`s Email" CssClass="label"></asp:Label>
                         <br />
-                        <asp:TextBox ID="TextBoxCRDEmail" runat="server" Width="352px"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCRDEmail" runat="server" Width="271px"></asp:TextBox>
                         <br />
                         <br />   
                         
                         <asp:Label ID="LabelCRDSocialNr" runat="server" Text="Enter Dentist`s Social Security Number" CssClass="label"></asp:Label>
                         <br />
-                        <asp:TextBox ID="TextBoxCRDSocialNr" runat="server" Width="352px"></asp:TextBox>
+                        <asp:TextBox ID="TextBoxCRDSocialNr" runat="server" Width="271px"></asp:TextBox>
                         <br />
-                        <br />
+                        
                     </div>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div style="display:flex; justify-content:center;">
+                    <div style="display: flex; justify-content: center; flex-direction: column; padding-left: 37.7%;">
                         <asp:Button ID="ButtonCRNewDentist" runat="server"  Text="Add new dentist to list" CssClass="button" Style="vertical-align: middle; text-align: center;" OnClick="ButtonCRNewDentist_Click" Width="271px" />
                         <asp:Button ID="ButtonDeleteSelectedDentist" runat="server" Text="Delete selected dentist" CssClass="button" Width="271px" OnClick="ButtonDeleteSelectedDentist_Click" />
                         <asp:Button ID="ButtonUpdateSelectedDentist" runat="server" Text="Update selected dentist" CssClass="button" Width="271px" OnClick="ButtonUpdateSelectedDentist_Click" />

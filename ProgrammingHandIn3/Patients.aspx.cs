@@ -44,6 +44,7 @@ namespace ProgrammingHandIn3
                 patientslist.Add(pat);
             }
 
+            //iterating throughtt he array
             for (int i = 0; i < patientslist.Count(); i++)
             {
                 if (i == Convert.ToInt32(Application["SelectedPatient"]))
@@ -103,7 +104,7 @@ namespace ProgrammingHandIn3
         {
             patientslist = (List<Patient>)Application["PatientList"];
 
-            FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write, FileShare.None);
+            FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write, FileShare.None); //because the first time file doest exist we need create, read- to read it, none share because am the only one who will be writing it
             BinaryFormatter bf = new BinaryFormatter();
             bf.Serialize(fs, patientslist);
             fs.Close();

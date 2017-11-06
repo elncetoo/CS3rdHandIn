@@ -8,9 +8,10 @@ using System.IO;
 namespace ProgrammingHandIn3
 {
     [Serializable]
-    public class Patient : Person
+    public class Patient : Person // this is where child class inherits the main person class
     {
         protected int socialnr;
+        //adding the new field
 
         public Patient(string name, int age, string password, string email, int socialnr) : base(name, age, password, email)
         {

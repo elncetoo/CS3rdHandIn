@@ -34,7 +34,7 @@ namespace ProgrammingHandIn3
             return "Name: " + Name + " Age: " + Age + " Email: " + Email + " Password: " + Password + " Social Security Nr: " + SocialNr;
         }
 
-        public override void ChangeEmail(string newEmail)
+        public override void ChangeEmail(string newEmail) //custom method that overrides the inserted email to  odont.dk and checking the regular expression
         {
             string pattern = "\\@(.*)";
 

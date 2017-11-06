@@ -46,7 +46,7 @@ namespace ProgrammingHandIn3
 
             foreach (Dentist dent in (List<Dentist>)Application["DentistList"])
             {
-                //creating a variable for each new dentist inthe application
+                //creating a variable for each new dentist in the application
                 dentistslist.Add(dent);
             }
 
